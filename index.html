@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">   
+    <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="header">
+            <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class="display-scores">
+        <h2 class="scores-title">Scores</h2>
+        <h3 class="score-board">User <span id="user-score">0</span>:<span id="computer-score">0</span> Computer</h3>
+    </div>
+    <div class="display-results">
+        <h3 id="message">Good luck!</h3>
+        <p id="action-message">Pick one</p>
+        <div class="choices">
+          <div class="choice" id="rock">
+            <img src="images/rock.png" alt="Closed fist" />
+            <p>Rock</p>
+          </div>
+  
+          <div class="choice" id="paper">
+            <img src="images/paper.png" alt="Palm of a hand" />
+            <p>Paper</p>
+          </div>
+  
+          <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="Peace hand sign" />
+            <p>Scissors</p>
+          </div>
+        </div>
+  
+        <div class="reset-button">
+          <button id="reset" onclick="resetGame()">Reset</button>
+        </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
