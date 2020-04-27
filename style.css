@@ -11,8 +11,8 @@ body {
     #051937,
     #004b67,
     #1f8286,
-    #75b798,
-    #d6e9ac
+    #75b798ec,
+    #d6e9acf1
   );
   background-repeat: no-repeat;
   color: #ffffff;
@@ -22,7 +22,7 @@ body {
 
 .header > h1 {
   text-align: center;
-  font-size: 6em;
+  font-size: 5.5em;
   color: #ffffff;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
 }
@@ -44,8 +44,14 @@ body {
 #message {
   text-align: center;
   font-size: 2rem;
-  margin-top: 50px;
+  margin-top: 30px;
+  color: #edfa3ef3;
   text-shadow: 3px 3px 0px rgba(24, 24, 24, 0.1);
+}
+
+#user-score,
+#computer-score {
+  color: #edfa3ef3;
 }
 
 .choices {
@@ -78,7 +84,7 @@ body {
 #action-message {
   text-align: center;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 1.7rem;
   margin: 10px;
 }
 
@@ -87,9 +93,9 @@ body {
 }
 
 #reset {
-  background-color: #3d3d3f;
+  background-color: #38383a;
   color: #ffffff;
-  font-size: 19px;
+  font-size: 1.4rem;
   font-weight: 600;
   padding: 6px 10px;
   border-radius: 42%;
@@ -120,13 +126,25 @@ body {
 
 @media only screen and (max-width: 429px) {
   .header > h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+  .scores-title {
+    font-size: 1.6rem;
+  }
+  #action-message {
+    font-size: 1.3rem;
+  }
+  #message {
+    font-size: 1.4rem;
+  }
+  #reset {
+    font-size: 1rem;
   }
   .choice > img {
-    width: 70px;
-    height: 70px;
+    width: 66px;
+    height: 66px;
   }
   .score-board {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
